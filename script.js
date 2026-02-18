@@ -5,8 +5,8 @@ class Rectangle {
 	private _height : number;
 	
 	constructor(width : number, height : number) {
-		this.width = width;
-		this.height = height;
+		this._width = width;
+		this._height = height;
 	}
 	
 	get width() : number{
