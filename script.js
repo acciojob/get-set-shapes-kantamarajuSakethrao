@@ -1,38 +1,36 @@
-//complete this code
 class Rectangle {
 
-	private _width : number;
-	private _height : number;
+	private widthValue: number;
+	private heightValue: number;
 	
-	constructor(width : number, height : number) {
-		this.width = width;
-		this.height = height;
+	constructor(width: number, height: number) {
+		this.widthValue = width;
+		this.heightValue = height;
 	}
 	
-	get width() : number{
-		return this._width;
+	get width(): number {
+		return this.widthValue;
 	}
 	
-	get height() : number{
-		return this._height;
+	get height(): number {
+		return this.heightValue;
 	}
-	getArea() : number {
-		return(
-			this._width * this._height;
-		);
+	
+	getArea(): number {
+		return this.widthValue * this.heightValue;
 	}
 }
 
 class Square extends Rectangle {
 	constructor(side: number) {
-		super(side , side);
+		super(side, side);
 	}
 	
-	getPerimeter() : number{
-		return this.width * 4
+	getPerimeter(): number {
+		return this.width * 4;
 	}
 }
 
-// Do not change the code below this line
+// Do not change below
 window.Rectangle = Rectangle;
 window.Square = Square;
